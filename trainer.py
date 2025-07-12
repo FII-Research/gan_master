@@ -172,7 +172,7 @@ if __name__ == "__main__":
     ])
     
     # Load CIFAR-10 dataset
-    train_dataset = CIFAR10(root='./data', train=True, download=False, transform=transform)
+    train_dataset = CIFAR10(root='./data/train', train=True, download=False, transform=transform)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False, num_workers=2)
         
     # Train the model
