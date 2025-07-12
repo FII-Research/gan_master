@@ -1,9 +1,8 @@
 import torch
 import torch.nn as nn
 from torchinfo import summary
-from huggingface_hub import PyTorchModelHubMixin
 
-class ConditionalGenerator(nn.Module, PyTorchModelHubMixin):
+class ConditionalGenerator(nn.Module):
     def __init__(self, latent_dim=100, num_classes=10, d=128, out_channels=3):
         super().__init__()
         
